@@ -1,0 +1,63 @@
+/*
+
+DISPLAYS 
+Display block(Por defecto): todo el ancho del navegador.
+Display inline-block: toma el tamaño del contenido y lo tiene la posibilidad de colocarlo al lado de
+los otros contenedores.
+Propiedad vertical align top: el contenido inicia desde arriba.
+Display none: Quitar elemnetos de la página que no son tan importantes en especial en Responsive Design
+
+MODELO DE CAJA
+
+POSITION
+STATIC(Por defecto)
+RELATIVE: rompe el modelo de caja, relativo a su padre. 
+ABSOLUTE: posición relativa y que sea padre suyo.
+FIXED: Se ajustan las propiedades con top right 
+
+
+*/
+
+
+body
+{
+	background-color: #E8E9D4;
+	font-family: Candara;
+	font-size: 16px;
+}
+
+#Header
+{
+	background-color: #73BAE7;
+	padding: 5px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	z-index: 2;
+
+	/*box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
+}
+
+#Header-title
+{
+	text-align: center;
+	font-size: 2em;
+
+
+}
+
+
+#List
+{
+	background-color: gray;
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+}
+
+#List-title
+{
+	text-align: center;
+}
+
